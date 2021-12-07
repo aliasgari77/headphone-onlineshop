@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url('https://v1.fontapi.ir/css/Nazanin');
+  
+  body {
+    font-family: 'Nazanin', sans-serif;
+    font-weight: normal;
+    text-align: right;
+  }
+  .header-top {
+    margin: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  
+  }
+  
+  .pages {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .pages i {
+    margin: 10px;
+  }
+  .pages i:hover {
+    color: rgba(110, 29, 92, 0.568);
+    transform: scale(1.5);
+  }
+  .icons_container {
+    display: flex; 
+    list-style: none;
+    flex-direction: row;
+  }
+  .icons {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 5px;
+  }
+  .icons:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 10px rgba(207, 100, 207, 0.336);
+  }
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .header-left:hover {
+    cursor: pointer;
+    background-color: rgba(187, 7, 127, 0.151);
+  }
+  .header_p {
+    margin-right: 0.5em;
+    padding-left: 1em;
+    margin-top: 2px;
+  }
+  
+  .figure-header {
+    width: 100%;
+    height: 65vh;
+    background-image: url("/Wallpaper/head.jfif");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  .figure-caption {
+    padding-top: 30vh ;
+    text-align: right;
+    padding-right: 45px;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em red;
+  }
+  @keyframes fig-title {
+    0% {
+      color: rgb(8, 8, 8);
+    }
+    50% {
+      color: rgb(131, 131, 131);
+    }
+    100% {
+      color: rgb(214, 214, 214);
+    }
+  }
+  
+  section {
+  margin: 2%;
+  }
+  .text-title {
+    border-bottom: red solid 2px;
+    display: inline;
+  }
+  
+  
+  
+  .headphones-container {
+  margin: 0.05vw;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-content: center;
+  }
+  .headphones {
+      max-width: 19rem;
+      min-height: 22rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid rgb(199, 199, 199) 3px ;
+      border-radius: 7px;
+      position: relative;
+      justify-items: center;
+      align-content: center;
+  }
+  .headphones:hover {
+      box-shadow: 2px 1px 30px 1px rgb(149, 52, 158) ;
+  }
+  .text-p {
+    text-align: center;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+  .headphone-img-container {
+      margin: 1rem;
+      width: 80%;
+  }
+  .headphones-container-top-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgb(224, 26, 26);
+      color: white;
+      border-radius: 5px;
+      margin-top: 3% ;
+      margin-right: 3% ;
+      padding: 0.2rem;
+  }
+  .headphones-container-top-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 5px;
+      margin-top: 3% ;
+      margin-right: 3% ;
+      padding: 0.2rem;
+  }
+  .checked {
+    color: orange;
+  }
+  .headphones-container-bottom {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      padding: 3%;
+      justify-content: space-between;
+  }
+  .headphones-container-bottom-left {
+    display: flex;
+    flex-direction: row;
+  }
+  .buy {
+    background-color: green;
+    color: white;
+    margin-left: 0.4rem;
+    margin-right: 0.2rem;
+    padding: 5px;
+    border-radius: 15px;
+    transition: all 1.2s;
+    float: left;
+    cursor: pointer;
+  }
+  .buy2 {
+    display: none;
+    transition: all 1s ;
+  }
+  .buy:hover .buy2 {
+    display: inline;
+    margin-left: -2rem;
+  }
+  .buy2:hover {
+    padding-left: 3rem;
+  }
+  .buy:hover {
+    padding-right: 1rem;
+    padding-left: 0.51rem;
+  }
+  
+  p , h3 {
+      direction: rtl;
+  }
+  footer {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(128, 132, 136);
+    padding: 2%;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:2rem ;
+    padding-bottom: 2rem;
+  }
+  .footer-right {
+    flex-basis: 70%;
+    text-align: justify;
+  }
+  
+  @media screen and (max-width: 952px) {
+    footer {
+    flex-flow: column wrap;
+    background-color: rgb(128, 132, 136);
+    padding: 2%;
+  }
+    .footer-left {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:0 ;
+    padding-bottom: 1rem;
+    flex-direction: row-reverse;
+  }
+}
